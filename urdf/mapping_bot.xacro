@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="mapping_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Include base robot from navigation_demo -->
+  <xacro:include filename="$(find 3d_mapping)/urdf/diff_bot.xacro" />
+  
+  <!-- Include RealSense D435 macro -->
+  <xacro:include filename="$(find 3d_mapping)/urdf/realsense_d435.xacro" />
+
+  <!-- Attach RealSense to the chassis -->
+  <xacro:realsense_d435 parent="chassis">
+    <!-- Positioned near the front of the 0.5m chassis, and raised slightly -->
+    <origin xyz="0.22 0 0.125" rpy="0 0 0" />
+  </xacro:realsense_d435>
+
+</robot>
