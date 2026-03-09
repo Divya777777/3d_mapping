@@ -1,6 +1,6 @@
 # 3D Mapping Package (ROS 2 Humble)
 
-![3D Mapping Demonstration](gifs/3d_mapping.mp4)
+![3D Mapping Demonstration](https://github.com/Divya777777/3d_mapping/blob/main/gifs/3d_mapping.gif)
 
 This package contains the simulation environment, configurations, and scripts required to perform 3D SLAM using RTAB-Map and Gazebo Harmonic on a differential drive robot equipped with a RealSense D435 RGB-D camera and LiDAR.
 
